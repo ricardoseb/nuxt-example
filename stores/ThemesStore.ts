@@ -1,4 +1,5 @@
-import {Alert, AlertOptions, AlertStyle} from "~/stores/AlertsStore";
+import { defineStore, acceptHMRUpdate } from "pinia";
+
 
 export type ThemeName = "luz" | "oscuro" | "magdalena" | "abejorro" | "esmeralda" |
     "corporativo" | "sintetizador" | "retro" | "ciberpunk" | "valentin" |
@@ -40,3 +41,6 @@ export const useThemesStore = defineStore("ThemesStore", {
 
 
 })
+if (import.meta.hot) {
+    import.meta.hot.accept(acceptHMRUpdate(useThemesStore, import.meta.hot));
+}

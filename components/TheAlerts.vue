@@ -1,4 +1,5 @@
 <script setup>
+import { useAlertsStore } from "~/stores/AlertsStore";
 const alerts = useAlertsStore();
 </script>
 <template>

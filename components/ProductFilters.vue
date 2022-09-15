@@ -1,4 +1,5 @@
 <script setup>
+import {  useProductStore } from "~/stores/ProductStore";
 const productStore = useProductStore();
 const filters = computed(() => productStore.filters);
 </script>
