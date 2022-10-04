@@ -11,13 +11,15 @@ export type ThemeName = "luz" | "oscuro" | "magdalena" | "abejorro" | "esmeralda
 export type ThemeOptions = {
     component_id?: string;
     color?: string;
-    isNotDefault?: boolean;
+    themeName?: string;
+
 }
 
 export interface Theme {
     id: number;
-    name?: ThemeName;
-    options?: ThemeOptions[];
+    isDefaultTheme?: boolean; // si es true se aplica a toda la pagina por lo tanto en los componentes no debemos leer data-theme
+    themeName: string; //solo lo leemos desde el componente app si isDefaultTheme esta en true
+    options?: ThemeOptions[]; // solo se lee si isDefaultTheme es false
 }
 
 
@@ -31,7 +33,7 @@ export const useThemesStore = defineStore("ThemesStore", {
         async findThemeByUser(user) {
             try {
 
-                
+
 
             } catch (error) {
 

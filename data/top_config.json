@@ -1,0 +1,26 @@
+{
+  "id": "3i0FygW932q7IVP4bivAdL",
+  "createdAt": "2022-08-09T19:06:50.723Z",
+  "updatedAt": "2022-08-09T19:06:50.723Z",
+  "mainNav": {
+    "logo": {
+      "url": "/main_logo.png",
+      "sizes": [
+        "sm:70px",
+        "md:80px",
+        "lg:100px"
+      ]
+    },
+    "centerMenu": {
+      "isIconActive": true,
+      "defaultSubMenuList": [
+        {
+          "id": "3i0FygW932q7IVP4biv",
+          "iconName": ""
+        }
+      ]
+    }
+  }
+}
+
+

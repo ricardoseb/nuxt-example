@@ -4,13 +4,15 @@
   </Head>
   <div>
     <NuxtLoadingIndicator color="#f04f43"/>
-    <TheNavbar/>
-    <NuxtLayout>
-      <NuxtPage/>
-    </NuxtLayout>
+    <TopMainNav/>
+
+<!--    <NuxtLayout>-->
+<!--      <NuxtPage/>-->
+<!--    </NuxtLayout>-->
     <TheAlerts/>
   </div>
 </template>
 <script setup>
-const theme = ref("cyberpunk")
+const theme = ref("wireframe")
+
 </script>

@@ -1,4 +1,4 @@
-import {defineNuxtConfig} from "nuxt";
+import { defineNuxtConfig } from 'nuxt/config'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 
@@ -9,8 +9,8 @@ export default defineNuxtConfig({
     typescript: {
         shim: false
     },
-    css: ["@/assets/main.css", "@formkit/themes/genesis"],
-    autoImports: {
+    css: ["@/assets/main.css", ],
+    imports: {
         dirs: ["stores"],
     },
     publicRuntimeConfig: {
@@ -19,10 +19,12 @@ export default defineNuxtConfig({
         },
     },
     modules: [
-        "@formkit/nuxt",
+        'nuxt-icon',
+        '@vueuse/nuxt',
+        '@nuxt/image-edge',
         ["@pinia/nuxt", {
                 autoImports: ["defineStore", "acceptHMRUpdate"],
-            },],
+            }],
     ],
     runtimeConfig: {
         public: {},
