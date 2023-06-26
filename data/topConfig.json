@@ -1,0 +1,69 @@
+{
+  "id": "3i0FygW932q7IVP4bivAdL",
+  "createdAt": "2022-08-09T19:06:50.723Z",
+  "updatedAt": "2022-08-09T19:06:50.723Z",
+  "appTheme": "wireframe",
+  "nav": {
+    "bgColor": "base-100",
+    "logo": {
+      "url": "/main_logo.png",
+      "sizes": [
+        "sm:80px",
+        "md:90px",
+        "lg:110px"
+      ]
+    },
+    "button": {
+      "isIconActive": true,
+      "isBgColorActive": false,
+      "bgColor": "bg-base-100",
+      "text": "Entrar",
+      "icon": {
+        "name": "mdi:location-enter",
+        "size": "26",
+        "color": "red"
+      },
+      "isCustomizable": false,
+      "customizableOptions": {
+
+      }
+    },
+    "centerMenu": {
+      "isIconActive": true,
+      "defaultSubMenuList": [
+        {
+          "id": "3i0FygW932q7IVP4biv",
+          "name": "Promociones",
+          "link": "#promociones",
+          "icon": {
+            "name": "mdi:sale",
+            "size": "26",
+            "color": "red"
+          }
+        },
+        {
+          "id": "3i0FygW932q7IVP4bap",
+          "name": "Menú",
+          "link": "#menu",
+          "icon": {
+            "name": "mdi:nutrition",
+            "size": "26",
+            "color": "red"
+          }
+        },
+        {
+          "id": "3i0FygW932q7IVP4b4a",
+          "name": "Locales",
+          "link": "locales",
+          "icon": {
+            "name": "mdi:storefront",
+            "size": "26",
+            "color": "red"
+          }
+        }
+      ]
+    }
+  }
+}
+
+

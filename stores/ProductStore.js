@@ -47,6 +47,9 @@ export const useProductStore = defineStore("ProductStore", {
     },
   },
 });
+// Pinia admite el reemplazo de Hot Module para que pueda editar sus tiendas e interactuar con ellas directamente en
+// su aplicación sin recargar la página, lo que le permite mantener el estado existente, agregar o incluso eliminar estados,
+//     acciones y captadores.
 
 if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useProductStore, import.meta.hot));
